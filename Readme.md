@@ -1,7 +1,7 @@
-# Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+﻿# Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Евгения Степанова](https://up.htmlacademy.ru/adaptive/20/user/1155941).
-* Наставник: `Неизвестно`.
+* Наставник: ` Кексобот`.
 
 ---
 
@@ -58,3 +58,4 @@ git clone SSH-адрес_вашего_форка
 [travis-url]: https://travis-ci.com/htmlacademy-adaptive/1155941-sedona-20
 [dependency-image]: https://david-dm.org/htmlacademy-adaptive/1155941-sedona-20/dev-status.svg?style=flat-square
 [dependency-url]: https://david-dm.org/htmlacademy-adaptive/1155941-sedona-20?type=dev
+
