@@ -1,0 +1,21 @@
+.blue-block {
+  background-color: $blue-color;
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+.blue-block__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+.blue-block__text {
+  font-size: 14px;
+  line-height: 21px;
+}
+.blue-block--gray-block {
+  background-color: $gray-color;
+  color: black;
+}

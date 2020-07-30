@@ -1,0 +1,18 @@
+.header__image {
+  width: 320px;
+  height: 389px;
+  background-image: url(/source/img/text-sedona-index.svg), url(/source/img/bg-back-mobile@1x.jpg);
+  background-size: 250px, auto;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+.header__image--not-main {
+  height: 138px;
+  background-image: url(/source/img/text-sedona.svg) , url(/source/img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 229px, auto;
+  background-position: center, bottom;
+}

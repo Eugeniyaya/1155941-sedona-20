@@ -1,0 +1,19 @@
+.interested {
+  width: 100%;
+}
+.interested__button {
+  width: 216px;
+  height: 26px;
+  background-color: $blue-color;
+  color: white;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+.interested__map {
+  width: 320px;
+  height: 350px;
+  background-image: url(/source/img/bg-map-mobile@1x.jpg);
+  background-repeat: no-repeat;
+}

@@ -1,1 +1,25 @@
-// Начните писать стили здесь
+@import "normalize.scss";
+@import "var.scss";
+@import "fonts.scss";
+
+/*All*/
+@import "./blocks/main.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/header.scss";
+@import "./blocks/intro.scss";
+@import "./blocks/footer.scss";
+
+/*Index*/
+@import "./blocks/blue-block.scss";
+@import "./blocks/reasons-list.scss";
+@import "./blocks/list-features.scss";
+@import "./blocks/question.scss";
+@import "./blocks/interested.scss";
+
+/*Photo*/
+@import "./blocks/photogallery.scss";
+@import "./blocks/block-photo.scss";
+@import "./blocks/video.scss";
+
+
+

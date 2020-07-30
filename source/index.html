@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/source/css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page__body">
@@ -27,8 +28,7 @@
         <img class="logo header__logo" src="https://via.placeholder.com/150x150" alt="Логотип городка Седона">
       </div>
       <div class="header__image">
-        <h1>Седона</h1>
-        <p>Текст о Седоне</p>
+        <h1 class="visually-hidden">Седона</h1>
       </div>
     </header>
     <main class="main">
@@ -40,33 +40,33 @@
         <ul class="reasons-list">
           <li class="reasons-list__reason reasons-list__reason--blue-blocks">
             <div class="blue-block">
-              <h2>Настоящий городок</h2>
-              <p>№1</p>
-              <p>Седона не аттракцион для туристов,<br> там течет своя жизнь</p>
+              <h2 class="blue-block__title">Настоящий городок</h2>
+              <p class="blue-block__text">№1</p>
+              <p class="blue-block__text">Седона не аттракцион для туристов,<br> там течет своя жизнь</p>
             </div>
             <div class="img-wrapper">
               <img src="https://via.placeholder.com/320x261" width="320" height="260" alt="фото Седоны">
             </div>
             <ul class="list-features">
               <li class="list-features__feature">
-                Жилье
-                <p>Рекомендуем пожить в<br> настоящем мотеле, все как в<br> кино!</p>
+                <h3 class="list-features__title">Жилье</h3>
+                <p class="list-features__text">Рекомендуем пожить в<br> настоящем мотеле, все как в<br> кино!</p>
               </li>
               <li class="list-features__feature">
-                Сувениры
-                <p>Не только китайского,  но и <br> местного производства!</p>
+                <h3 class="list-features__title">Сувениры</h3>
+                <p class="list-features__text">Не только китайского,  но и <br> местного производства!</p>
               </li>
               <li class="list-features__feature">
-                Еда
-                <p>Всегда заказывайте<br> фирменный бургер, вы не <br> разочаруетесь!</p>
+                <h3 class="list-features__title">Еда</h3>
+                <p class="list-features__text">Всегда заказывайте<br> фирменный бургер, вы не <br> разочаруетесь!</p>
               </li>
             </ul>
           </li>
           <li class="reasons-list__reason reasons-list__reason--blue-blocks">
             <div class="blue-block">
-              <h2>Там есть мост дьявола</h2>
-              <p>№2</p>
-              <p>Да, по нему можно пройти! если вы <br> осмелитесь, конечно</p>
+              <h2 class="blue-block__title">Там есть мост дьявола</h2>
+              <p class="blue-block__text">№2</p>
+              <p class="blue-block__text">Да, по нему можно пройти! если вы <br> осмелитесь, конечно</p>
             </div>
             <div class="img-wrapper">
               <img src="https://via.placeholder.com/320x261" alt="фото Моста дьявола">
@@ -74,23 +74,23 @@
           </li>
           <li class="reasons-list__reason reasons-list__reason--gray-blocks">
             <div class="blue-block blue-block--gray-block">
-              <h2>небольшая площадь</h2>
-              <p>№3</p>
-              <p>все интересные места находятся <br> очень близко</p>
+              <h2 class="blue-block__title">небольшая площадь</h2>
+              <p class="blue-block__text">№3</p>
+              <p class="blue-block__text">все интересные места находятся <br> очень близко</p>
             </div>
           </li>
           <li class="reasons-list__reason reasons-list__reason--gray-blocks">
             <div class="blue-block blue-block--gray-block">
-              <h2>красивая дорога</h2>
-              <p>№4</p>
-              <p>ехать в седону из лас-вегаса <br> совсем не скучно</p>
+              <h2 class="blue-block__title">красивая дорога</h2>
+              <p class="blue-block__text">№4</p>
+              <p class="blue-block__text">ехать в седону из лас-вегаса <br> совсем не скучно</p>
             </div>
           </li>
           <li class="reasons-list__reason reasons-list__reason--gray-blocks">
             <div class="blue-block blue-block--gray-block">
-              <h2>мало туристов</h2>
-              <p>№5</p>
-              <p>большинство едет в гранд каньон <br> и толпится там</p>
+              <h2 class="blue-block__title">мало туристов</h2>
+              <p class="blue-block__text">№5</p>
+              <p class="blue-block__text">большинство едет в гранд каньон <br> и толпится там</p>
             </div>
           </li>
         </ul>
@@ -109,14 +109,14 @@
         #VISITSEDONA
       </div>
       <ul class="footer__social">
-        <li>
-          <a href="#" class="visually-hidden">tw</a>
+        <li class="footer__icon">
+          <a href="#">tw</a>
         </li>
-        <li>
-          <a href="#" class="visually-hidden">fb</a>
+        <li class="footer__icon">
+          <a href="#">fb</a>
         </li>
-        <li>
-          <a href="#" class="visually-hidden">youtube</a>
+        <li class="footer__icon">
+          <a href="#">youtube</a>
         </li>
       </ul>
       <address class="footer__autor">
