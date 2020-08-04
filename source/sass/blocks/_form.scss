@@ -1,0 +1,17 @@
+.form {
+  width: 100%;
+  height: 1668px;
+
+  outline: 2px solid rgb(4, 7, 199);
+  outline-offset: -2px;
+}
+@media (min-width: $tablet) {
+  .form {
+    height: 1458px;
+  }
+}
+@media (min-width: $desktop) {
+  .form {
+    height: 1209px;
+  }
+}

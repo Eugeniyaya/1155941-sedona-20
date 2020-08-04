@@ -1,7 +1,14 @@
 .navigation {
-  background-color: $blue-color;
+  width: 100%;
+  //background-color: $blue-color;
+  display: flex;
+  flex-direction: column;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
 .navigation__list {
+  min-height: 223px;
   list-style: none;
   color: white;
   font-weight: bold;
@@ -17,4 +24,18 @@
   color: white;
   text-decoration: none;
 }
-
+.navigation__item {
+  height: 55px;
+  padding-top: 12px;;
+}
+@media (min-width: $tablet) {
+  .navigation__list {
+    flex-direction: row;
+    background-color: white;
+    justify-content: space-between;
+    min-height: 56px;
+  }
+  .navigation__link {
+    color: black;
+  }
+}
