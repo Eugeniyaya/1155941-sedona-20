@@ -9,7 +9,7 @@
 
   outline: 2px solid rgb(250, 231, 59);
   outline-offset: -2px;
-  background-image: url(/source/img/Mobile-photo-menu.jpg);
+  background-image: url(/source/img/Mobile-form.jpg);
   background-repeat: no-repeat;
   background-size: 320px;
   background-position: top, center;
@@ -27,14 +27,14 @@
 @media (min-width: $tablet) {
   .page__body {
     width: 768px;
-    background-image: url(/source/img/Tablet-photo.jpg);
+    background-image: url(/source/img/Tablet-form.png);
     background-size: 768px;
   }
 }
 @media (min-width: $desktop) {
   .page__body {
     width: 1200px;
-    background-image: url(/source/img/Desktop-photo.jpg);
+    background-image: url(/source/img/Desktop-form.jpg);
     background-size: 1280px;
 
   }
