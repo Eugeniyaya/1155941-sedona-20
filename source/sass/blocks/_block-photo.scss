@@ -1,3 +1,22 @@
+.block-photo {
+  display: flex;
+  flex-direction: column;
+  height: 414px;
+  outline: 2px solid rgb(60, 168, 87);
+  outline-offset: -2px;
+}
+.block-photo--first-block {
+  width: 100%;
+  height: 532px;
+  outline: 2px solid rgb(40, 181, 246);
+  outline-offset: -2px;
+}
+.block-photo--not-first-block {
+  width: 50%;
+  height: 347px;
+  outline: 2px solid rgb(4, 7, 199);
+  outline-offset: -2px;
+}
 .block-photo__title {
   font-weight: bold;
   font-size: 14px;
@@ -12,4 +31,20 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
+  display: flex;
+  flex-direction: row;
+}
+@media (min-width: $desktop) {
+  .block-photo--first-block {
+    width: 100%;
+    height: 400px;
+    position: relative;
+  }
+  .block-photo__title, .block-photo__autor, .block-photo__likes {
+    position: absolute;
+  }
+  .block-photo--not-first-block {
+    width: 33.33%;
+    height: 267px;
+  }
 }

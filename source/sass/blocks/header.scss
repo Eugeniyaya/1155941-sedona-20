@@ -11,7 +11,7 @@
   outline-offset: -2px;
 }
 .header__image--not-main {
-  height: 138px;
+  height: 156px;
   //background-image: url(/source/img/text-sedona.svg) , url(/source/img/bg-back-tablet@1x.jpg);
   background-repeat: no-repeat, no-repeat;
   background-size: 229px, auto;
@@ -31,6 +31,9 @@
     height: 518px;
     background-size: 461px, 200%;
   }
+  .header__image--not-main {
+    height: 292px;
+  }
   .header__logo {
     margin-top: -56px;
   }
@@ -42,5 +45,8 @@
   .header__image {
     width: 1200px;
     height: 518px;
+  }
+  .header__image--not-main {
+    height: 394px;
   }
 }

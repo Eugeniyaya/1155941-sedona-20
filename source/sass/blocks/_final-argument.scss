@@ -1,0 +1,19 @@
+.final-argument {
+  height: 509px;
+  outline: 2px solid rgb(60, 168, 87);
+  outline-offset: -2px;
+}
+@media (min-width: $tablet) {
+  .final-argument {
+    height: 745px;
+  }
+}
+@media (min-width: $desktop) {
+  .final-argument {
+    height: 831px;
+    margin: 0 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
