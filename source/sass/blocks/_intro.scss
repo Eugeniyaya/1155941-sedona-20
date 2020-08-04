@@ -1,7 +1,18 @@
 .intro {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 225px;
+  text-align: center;
+  padding-top: 20px;
+
+  outline: 2px solid rgb(231, 2, 2);
+  outline-offset: -2px;
 }
 .intro__title {
+  width: 258px;
+  margin: 0;
+  padding-top: 12px;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
@@ -9,4 +20,20 @@
 .intro__text {
   font-size: 14px;
   line-height: 26px;
+  margin: 0;
+}
+@media (min-width: $tablet) {
+  .intro {
+    padding: 0;
+    height: 204px;
+  }
+  .intro__title {
+    width: 520px;
+    text-align: center;
+    font-size: 21px;
+    margin: 0 auto;
+  }
+  .intro__text {
+    text-align: center;
+  }
 }

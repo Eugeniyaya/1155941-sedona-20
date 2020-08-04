@@ -1,4 +1,20 @@
 .reasons-list {
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+@media (min-width: $tablet) {
+  .reasons-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    outline: 2px solid rgb(231, 33, 215);
+    outline-offset: -2px;
+  }
+  .reasons-list__reason--gray-blocks {
+    width: 33.33%;
+    display: flex;
+    height: 256px;
+  }
 }

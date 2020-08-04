@@ -1,0 +1,10 @@
+.decoration {
+  height: 20px;
+  outline: 2px solid rgb(246, 120, 120);
+  outline-offset: -2px;
+}
+@media (min-width: $tablet) {
+.decoration {
+  display: none;
+}
+}

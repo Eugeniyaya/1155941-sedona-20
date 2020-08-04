@@ -1,21 +1,37 @@
 .blue-block {
-  background-color: $blue-color;
+  //background-color: $blue-color;
   width: 100%;
+  height: 190px;
   color: white;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+  outline: 2px solid rgb(185, 3, 209);
+  outline-offset: -2px;
 }
 .blue-block__title {
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+  margin: 0;
 }
 .blue-block__text {
   font-size: 14px;
   line-height: 21px;
 }
 .blue-block--gray-block {
-  background-color: $gray-color;
+  //background-color: $gray-color;
   color: black;
+  height: 169px;
+}
+@media (min-width: $tablet) {
+  .blue-block, .blue-block--gray-block {
+  width: 100%;
+  height: auto;
+   margin: 0;
+  }
+  .blue-block__devil {
+    order: 2;
+    width: 33.33%;
+  }
 }

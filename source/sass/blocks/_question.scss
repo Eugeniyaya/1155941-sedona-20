@@ -5,8 +5,24 @@
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  margin: 0;
 }
 .question__text {
   font-size: 14px;
   line-height: 24px;
 }
+@media (min-width: $tablet) {
+  .question {
+    max-width: 435px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .question__title {
+    font-size: 30px;
+  }
+  .question__text {
+    text-align: center;
+  }
+}
+

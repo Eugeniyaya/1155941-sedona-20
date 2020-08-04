@@ -1,13 +1,29 @@
 .list-features {
   list-style: none;
   padding: 0;
+  height: 416px;
+  outline: 2px solid rgb(236, 195, 12);
+    outline-offset: -2px;
+
 }
 .list-features__title {
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+  margin: 0;
 }
 .list-features__text {
   font-size: 14px;
   line-height: 21px;
+}
+.list-features__feature {
+  width: 100%;
+}
+@media (min-width: $tablet) {
+  .list-features {
+    outline: 2px solid rgb(109, 238, 22);
+    outline-offset: -2px;
+    display: flex;
+    height: 332px;
+  }
 }
