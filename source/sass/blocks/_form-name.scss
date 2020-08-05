@@ -1,0 +1,17 @@
+.form-name {
+  min-height: 304px;
+
+  outline: 2px solid rgb(33, 142, 231);
+  outline-offset: -2px;
+}
+@media (min-width: $tablet) {
+  .form-name {
+    width: 50%;
+    min-height: 400px;
+  }
+}
+@media (min-width: $desktop) {
+  .form-name {
+    min-height: 300px;
+  }
+}

@@ -1,17 +1,67 @@
 .form {
   width: 100%;
-  height: 1668px;
+  min-height: 1668px;
 
-  outline: 2px solid rgb(4, 7, 199);
+  outline: 2px solid rgb(219, 17, 17);
   outline-offset: -2px;
+}
+.form h3 {
+  margin: 0;
+}
+.form__impression {
+  min-height: 286px;
+  outline: 2px solid rgb(1, 105, 119);
+  outline-offset: -2px;
+  display: flex;
+  flex-direction: column;
+  order: -1;
+}
+.form__attractions {
+  min-height: 408px;
+  outline: 2px solid rgb(1, 105, 119);
+  outline-offset: -2px;
+  display: flex;
+  flex-direction: column;
+}
+.form__emotions {
+  min-height: 422px;
+  outline: 2px solid rgb(1, 105, 119);
+  outline-offset: -2px;
+  display: flex;
+  flex-direction: column;
 }
 @media (min-width: $tablet) {
   .form {
-    height: 1458px;
+    min-height: 1458px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form__impression {
+    min-height: 400px;
+    width: 50%;
+  }
+  .form__emotions, .form__attractions {
+    width: 100%;
+  }
+  .form__attractions {
+    min-height: 320px;
+  }
+  .form__emotions {
+    min-height: 415px;
   }
 }
 @media (min-width: $desktop) {
   .form {
-    height: 1209px;
+    min-height: 1209px;
+  }
+  .form__impression {
+    min-height: 300px;
+    width: 50%;
+  }
+  .form__attractions {
+    min-height: 220px;
+  }
+  .form__emotions {
+    min-height: 415px;
   }
 }
