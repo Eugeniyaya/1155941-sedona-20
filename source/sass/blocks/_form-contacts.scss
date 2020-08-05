@@ -1,0 +1,20 @@
+.form-contacts {
+  min-height: 286px;
+  display: flex;
+  flex-direction: column;
+
+  outline: 2px solid rgb(60, 168, 87);
+  outline-offset: -2px;
+}
+@media (min-width: $tablet) {
+  .form-contacts {
+    width: 100%;
+    min-height: 320px;
+  }
+}
+@media (min-width: $desktop) {
+  .form-contacts {
+    min-height: 252px;
+  }
+}
+
