@@ -1,7 +1,7 @@
 .header__image {
   width: 320px;
   height: 389px;
-  background-image: url(/source/img/text-sedona-index.svg), url(/source/img/bg-back-mobile@1x.jpg);
+  //background-image: url(/source/img/text-sedona-index.svg), url(/source/img/bg-back-mobile@1x.jpg);
   background-size: 250px, auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -22,8 +22,8 @@
 }
 .header__middle {
   height: 56px;
-  outline: 2px solid rgb(66, 61, 61);
-  outline-offset: -2px;
+  //outline: 2px solid rgb(66, 61, 61);
+  //outline-offset: -2px;
 }
 @media (min-width: $tablet) {
   .header__image {
@@ -36,9 +36,10 @@
   }
   .header__logo {
     margin-top: -56px;
-  }
+    }
   .header__middle {
     height: 0px;
+    position: relative;
   }
 }
 @media (min-width: $desktop) {
@@ -47,6 +48,6 @@
     height: 518px;
   }
   .header__image--not-main {
-    height: 390px;
+    height: 386px;
   }
 }

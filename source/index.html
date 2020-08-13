@@ -8,7 +8,10 @@
   </head>
   <body class="page__body">
     <header class="header">
-      <nav class="navigation header__navigation">
+      <nav class="navigation header__navigation navigation--nojs">
+        <button class="navigation__toggle-close" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="navigation__list">
           <li class="navigation__item">
             <a class="navigation__link">Главная</a>
@@ -23,6 +26,9 @@
             <a class="navigation__link" href="https://htmlacademy.ru/">html academy</a>
           </li>
         </ul>
+        <button class="navigation__burger" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </nav>
       <div class="header__middle">
         <img class="logo header__logo" src="/source/img/logo-sedona-mobile.svg" alt="Логотип городка Седона">
@@ -33,7 +39,7 @@
     </header>
     <main class="main">
       <section class="intro">
-        <h2 class="intro__title">Седона — небольшой городок в Аризоне,  заслуживающий большего!</h2>
+        <h2 class="intro__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
       <section class="reasons">
@@ -43,8 +49,8 @@
             <div class="block-img-wrapper">
               <div class="blue-block">
                 <h2 class="blue-block__title">Настоящий городок</h2>
-                <p class="blue-block__text">№1</p>
-                <p class="blue-block__text">Седона не аттракцион для туристов,<br> там течет своя жизнь</p>
+                <p class="blue-block__text">— №1 —</p>
+                <p class="blue-block__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
               <div class="block-img-wrapper__img-wrapper">
                 <img src="/source/img/main-city-mobile@1x.jpg" height="256" width="320" alt="фото Седоны">
@@ -53,15 +59,15 @@
             <ul class="list-features">
               <li class="list-features__feature">
                 <h3 class="list-features__title">Жилье</h3>
-                <p class="list-features__text">Рекомендуем пожить в<br> настоящем мотеле, все как в<br> кино!</p>
+                <p class="list-features__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li class="list-features__feature">
+              <li class="list-features__feature list-features__feature--souvenir">
                 <h3 class="list-features__title">Сувениры</h3>
-                <p class="list-features__text">Не только китайского,  но и <br> местного производства!</p>
+                <p class="list-features__text"><span class="souvenir-br">Не только китайского,</span> но и местного производства!</p>
               </li>
-              <li class="list-features__feature">
+              <li class="list-features__feature list-features__feature--eat">
                 <h3 class="list-features__title">Еда</h3>
-                <p class="list-features__text">Всегда заказывайте<br> фирменный бургер, вы не <br> разочаруетесь!</p>
+                <p class="list-features__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
             </ul>
           </li>
@@ -69,8 +75,8 @@
             <div class="block-img-wrapper">
               <div class="blue-block blue-block__devil">
                 <h2 class="blue-block__title">Там есть мост дьявола</h2>
-                <p class="blue-block__text">№2</p>
-                <p class="blue-block__text">Да, по нему можно пройти! если вы <br> осмелитесь, конечно</p>
+                <p class="blue-block__text">— №2 —</p>
+                <p class="blue-block__text">Да, по нему можно пройти! если вы осмелитесь, конечно</p>
               </div>
               <div class="block-img-wrapper__img-wrapper">
                 <img src="/source/img/photo-bridge-mobile@1x.jpg" height="256" width="320" alt="фото Моста дьявола">
@@ -79,23 +85,23 @@
           </li>
           <li class="reasons-list__reason reasons-list__reason--gray-blocks">
             <div class="blue-block blue-block--gray-block">
-              <h2 class="blue-block__title">небольшая площадь</h2>
-              <p class="blue-block__text">№3</p>
-              <p class="blue-block__text">все интересные места находятся <br> очень близко</p>
+              <h2 class="blue-block__title blue-block__title--gray-block">небольшая площадь</h2>
+              <p class="blue-block__text">— №3 —</p>
+              <p class="blue-block__text blue-block__text--gray-block">все интересные места находятся очень близко</p>
             </div>
           </li>
           <li class="reasons-list__reason reasons-list__reason--gray-blocks">
             <div class="blue-block blue-block--gray-block">
-              <h2 class="blue-block__title">красивая дорога</h2>
-              <p class="blue-block__text">№4</p>
-              <p class="blue-block__text">ехать в седону из лас-вегаса <br> совсем не скучно</p>
+              <h2 class="blue-block__title blue-block__title--gray-block">красивая дорога</h2>
+              <p class="blue-block__text blue-block__text--gray-block">— №4 —</p>
+              <p class="blue-block__text blue-block__text--gray-block"><span class="blue-block__fun-ride">ехать в седону из лас-вегаса совсем не скучно!</span></p>
             </div>
           </li>
           <li class="reasons-list__reason reasons-list__reason--gray-blocks">
             <div class="blue-block blue-block--gray-block">
-              <h2 class="blue-block__title">мало туристов</h2>
-              <p class="blue-block__text">№5</p>
-              <p class="blue-block__text">большинство едет в гранд каньон <br> и толпится там</p>
+              <h2 class="blue-block__title blue-block__title--gray-block">мало туристов</h2>
+              <p class="blue-block__text">— №5 —</p>
+              <p class="blue-block__text blue-block__text--gray-block">большинство едет в гранд каньон и толпится там</p>
             </div>
           </li>
         </ul>
@@ -103,7 +109,7 @@
       <section class="interested">
         <div class="question">
           <h2 class="question__title">Заинтересовались?</h2>
-          <p class="question__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <p class="question__text"><span class="question__ride">Укажите предполагаемые даты поездки,</span> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </div>
         <div class="interested__button">Найти гостиницу</div>
         <div class="interested__map"></div>
@@ -115,18 +121,18 @@
       </div>
       <ul class="footer__social">
         <li class="footer__icon">
-          <a href="#">tw</a>
+          <a href="#" class="footer__icon visually-hidden">twitter</a>
         </li>
         <li class="footer__icon">
-          <a href="#">fb</a>
+          <a href="#" class="footer__icon visually-hidden">fasebook</a>
         </li>
         <li class="footer__icon">
-          <a href="#">youtube</a>
+          <a href="#" class="footer__icon visually-hidden">youtube</a>
         </li>
       </ul>
       <address class="footer__autor">
-        <p>Разработано</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive">
+        <p class="footer__text">Разработано</p>
+        <a class="footer__img" href="https://htmlacademy.ru/intensive/adaptive">
           <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="logo html-academy">
         </a>
       </address>

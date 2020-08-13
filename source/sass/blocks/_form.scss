@@ -24,7 +24,7 @@
   flex-direction: column;
 }
 .form__emotions {
-  min-height: 422px;
+  min-height: 385px;
   outline: 2px solid rgb(1, 105, 119);
   outline-offset: -2px;
   display: flex;
@@ -32,7 +32,7 @@
 }
 @media (min-width: $tablet) {
   .form {
-    min-height: 1458px;
+    min-height: 1445px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -63,5 +63,6 @@
   }
   .form__emotions {
     min-height: 415px;
+    margin-bottom: 28px;
   }
 }
