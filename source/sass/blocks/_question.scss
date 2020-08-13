@@ -1,28 +1,49 @@
 .question {
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .question__title {
   font-weight: bold;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   margin: 0;
+  padding-top: 31px;
 }
 .question__text {
+  width: 266px;
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 15px;
+  text-align: center;
 }
 @media (min-width: $tablet) {
   .question {
-    max-width: 435px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .question__title {
     font-size: 30px;
+    padding-top: 56px;
   }
   .question__text {
     text-align: center;
+    padding-top: 33px;
+    width: 445px;
+  }
+  .question__ride {
+    width: 435px;
+    text-align: center;
+    padding: 0 70px;
+  }
+}
+@media (min-width: $desktop) {
+  .question__title {
+    padding-top: 59px;
   }
 }
 

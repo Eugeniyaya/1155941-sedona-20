@@ -1,5 +1,11 @@
 .form-name {
   min-height: 304px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 0;
 
   outline: 2px solid rgb(33, 142, 231);
   outline-offset: -2px;
@@ -13,5 +19,6 @@
 @media (min-width: $desktop) {
   .form-name {
     min-height: 300px;
+    margin: 0;
   }
 }
