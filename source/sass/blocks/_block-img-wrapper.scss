@@ -1,5 +1,6 @@
 .block-img-wrapper__img-wrapper {
   height: 258px;
+  width: 66.66%;
 }
 @media (min-width: $tablet) {
   .block-img-wrapper {
@@ -8,13 +9,18 @@
     min-width: 768px;
     height: 256px;
 
-
     outline: 2px solid rgb(33, 142, 231);
     outline-offset: -2px;
+  }
+  .block-img-wrapper__image {
+    width: 100%;
   }
 }
 @media (min-width: $desktop) {
   .block-img-wrapper {
     min-width: 1200px;
+  }
+  .block-img-wrapper__image {
+    object-fit: cover;
   }
 }

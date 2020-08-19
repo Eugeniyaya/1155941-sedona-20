@@ -9,14 +9,14 @@
   font-size: 18px;
   line-height: 26px;
   margin: 0;
-  padding-top: 31px;
+  padding-top: 19px;
 }
 .question__text {
   width: 266px;
   font-size: 14px;
   line-height: 24px;
   margin: 0;
-  padding-top: 27px;
+  padding-top: 26px;
   padding-bottom: 15px;
   text-align: center;
 }
@@ -38,12 +38,15 @@
   .question__ride {
     width: 435px;
     text-align: center;
-    padding: 0 70px;
+    padding: 0 75px;
   }
 }
 @media (min-width: $desktop) {
   .question__title {
     padding-top: 59px;
+  }
+  .question__ride {
+    padding: 0 75px;
   }
 }
 
