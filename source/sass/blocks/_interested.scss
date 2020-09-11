@@ -5,29 +5,13 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-
-  outline: 2px solid rgb(194, 11, 112);
-    outline-offset: -2px;
-}
-.interested__button {
-  width: 280px;
-  height: 58px;
-  background-color: $blue-color;
-  color: white;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .interested__map {
   width: 320px;
   height: 350px;
   background-image: url(/source/img/bg-map-mobile@1x.jpg);
   background-repeat: no-repeat;
-  margin-top: 49px;
+  margin-top: 50px;
   @media
   (min-resolution: 144dpi),
   (min-resolution: 1.5dppx) {
@@ -42,8 +26,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    outline: 2px solid rgb(71, 112, 149);
-    outline-offset: -2px;
   }
   .interested__map {
     width: 768px;
@@ -57,7 +39,7 @@
       background-position: center;
     }
   }
-  .interested__button {
+  .button {
     width: 458px;
     height: 58px;
     padding-top: 2px;

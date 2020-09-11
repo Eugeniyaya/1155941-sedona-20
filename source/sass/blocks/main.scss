@@ -1,3 +1,6 @@
+a {
+  text-decoration: none;
+}
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -5,14 +8,8 @@
   width: 320px;
   margin: 0 auto;
   text-transform: uppercase;
-  font-family: 'ptsans';
-
-  outline: 2px solid rgb(250, 231, 59);
-  outline-offset: -2px;
-  background-image: url(/source/img/Mobilephoto-last.jpg);
-  background-repeat: no-repeat;
-  background-size: 320px;
-  background-position: top, center;
+  font-family: 'ptsans', Arial, Helvetica, sans-serif;
+  position: relative;
 }
 .visually-hidden {
   position: absolute;
@@ -27,15 +24,10 @@
 @media (min-width: $tablet) {
   .page__body {
     width: 768px;
-    background-image: url(/source/img/Tabletphoto-last.jpg);
-    background-size: 768px;
   }
 }
 @media (min-width: $desktop) {
   .page__body {
     width: 1200px;
-    background-image: url(/source/img/Desktopphoto-last.jpg);
-    background-size: 1280px;
-    background-position: top;
   }
 }

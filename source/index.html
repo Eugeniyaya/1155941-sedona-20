@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/source/css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page__body">
@@ -49,21 +49,24 @@
           <circle cx="46.083" cy="10.083" r="2"/>
         </g>
       </symbol>
+      <symbol id="icon-academy" viewBox="0 0 26.943 34.09">
+        <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+      </symbol>
     </svg>
     <header class="header">
       <nav class="navigation header__navigation navigation--nojs">
         <button class="navigation__toggle-close" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+          <span class="visually-hidden">Закрыть меню</span>
         </button>
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link">Главная</a>
+            <a class="navigation__link navigation__link--active">Главная</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="/source/photo.html">фото и видео</a>
+            <a class="navigation__link" href="photo.html">фото и видео</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="/source/form.html">форма отзыва</a>
+            <a class="navigation__link" href="form.html">форма отзыва</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="https://htmlacademy.ru/">html academy</a>
@@ -75,18 +78,18 @@
       </nav>
       <div class="header__middle">
         <picture>
-          <source media="(min-width:1200px)" srcset="/source/img/logo-sedona-desktop.svg">
-          <source media="(min-width:768px)" srcset="/source/img/logo-sedona-tablet.svg">
-          <img class="logo header__logo" src="/source/img/logo-sedona-mobile.svg" width="101.7" height="84" alt="Логотип городка Седона">
+          <source media="(min-width:1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width:768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="logo header__logo" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип городка Седона">
         </picture>
       </div>
-      <div class="header__image">
+      <div class="header__image--main">
         <h1 class="visually-hidden">Седона</h1>
       </div>
       <picture>
-        <source media="(min-width:1200px)" srcset="/source/img/bg-intro-triangle-desktop.svg">
-        <source media="(min-width:768px)" srcset="/source/img/bg-intro-triangle-tablet.svg">
-        <img class="bg-triangle" src="/source/img/bg-intro-triangle-mobile.svg" width="320" height="37">
+        <source media="(min-width:1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+        <source media="(min-width:768px)" srcset="img/bg-intro-triangle-tablet.svg">
+        <img class="bg-triangle" src="img/bg-intro-triangle-mobile.svg" width="320" height="37" alt="для красоты">
       </picture>
     </header>
     <main class="main">
@@ -98,7 +101,7 @@
         <ul class="reasons-list">
           <li class="reasons-list__reason reasons-list__reason--blue-blocks">
             <div class="decoration">
-              <img class="bg-triangle bg-triangle--reasons" src="/source/img/bg-intro-triangle-mobile-blue.svg" width="320" height="37">
+              <img class="bg-triangle bg-triangle--reasons" src="img/bg-intro-triangle-mobile-blue.svg" width="320" height="37" alt="для красоты">
             </div>
             <div class="block-img-wrapper">
               <div class="blue-block">
@@ -108,9 +111,9 @@
               </div>
               <div class="block-img-wrapper__img-wrapper">
                 <picture>
-                  <source media="(min-width:1200px)" srcset="/source/img/main-city-desktop@1x.jpg, /source/img/main-city-desktop@2x.jpg">
-                  <source media="(min-width:768px)" srcset="/source/img/main-city-tablet@1x.jpg, /source/img/main-city-tablet@2x.jpg">
-                  <img class="block-img-wrapper__image" src="/source/img/main-city-mobile@1x.jpg" height="256" width="320" alt="фото Седоны">
+                  <source media="(min-width:1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                  <source media="(min-width:768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+                  <img class="block-img-wrapper__image" src="img/main-city-mobile@1x.jpg" height="256" width="320" alt="фото Седоны">
                 </picture>
               </div>
             </div>
@@ -147,9 +150,9 @@
               </div>
               <div class="block-img-wrapper__img-wrapper">
                 <picture>
-                  <source media="(min-width:1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
-                  <source media="(min-width:768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-                  <img class="block-img-wrapper__image" src="/source/img/photo-bridge-mobile@1x.jpg" srcset="/source/img/photo-bridge-mobile@1x.jpg 1x, /source/img/photo-bridge-mobile@2x.jpg 2x"  height="256" width="320" alt="фото Моста дьявола">
+                  <source media="(min-width:1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width:768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+                  <img class="block-img-wrapper__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@1x.jpg 1x, img/photo-bridge-mobile@2x.jpg 2x" height="256" width="320" alt="фото Моста дьявола">
                 </picture>
               </div>
             </div>
@@ -161,6 +164,7 @@
               <p class="blue-block__text blue-block__text--gray-block">все интересные места находятся очень близко</p>
             </div>
           </li>
+          <li class="hr hr--index"></li>
           <li class="reasons-list__reason reasons-list__reason--gray-blocks">
             <div class="blue-block blue-block--gray-block">
               <h2 class="blue-block__title blue-block__title--gray-block">красивая дорога</h2>
@@ -168,6 +172,7 @@
               <p class="blue-block__text blue-block__text--gray-block"><span class="blue-block__fun-ride">ехать в седону из лас-вегаса совсем не скучно!</span></p>
             </div>
           </li>
+          <li class="hr hr--index"></li>
           <li class="reasons-list__reason reasons-list__reason--gray-blocks">
             <div class="blue-block blue-block--gray-block">
               <h2 class="blue-block__title blue-block__title--gray-block">мало туристов</h2>
@@ -182,7 +187,9 @@
           <h2 class="question__title">Заинтересовались?</h2>
           <p class="question__text"><span class="question__ride">Укажите предполагаемые даты поездки,</span> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </div>
-        <div class="interested__button">Найти гостиницу</div>
+        <a href="#" class="button">
+          <span class="button__text">Найти гостиницу</span>
+        </a>
         <div class="interested__map"></div>
       </section>
     </main>
@@ -219,7 +226,9 @@
       <address class="footer__autor">
         <p class="footer__text">Разработано</p>
         <a class="footer__img" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="logo html-academy">
+          <svg width="27" height="34">
+            <use xlink:href="#icon-academy"></use>
+          </svg>
         </a>
       </address>
     </footer>

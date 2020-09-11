@@ -4,9 +4,7 @@
   height: 416px;
   display: flex;
   flex-direction: column;
-  outline: 2px solid rgb(236, 195, 12);
-  outline-offset: -2px;
-  padding-top: 5px;
+  padding-top: 7px;
   position: relative;
 }
 .list-features__title {
@@ -39,8 +37,6 @@
 }
 @media (min-width: $tablet) {
   .list-features {
-    outline: 2px solid rgb(109, 238, 22);
-    outline-offset: -2px;
     display: flex;
     flex-direction: row;
     height: 332px;
@@ -50,7 +46,7 @@
   }
   .list-features__text {
     width: 192px;
-    padding-top: 9px;
+    padding-top: 10px;
   }
   .list-features__feature {
     padding: 0;

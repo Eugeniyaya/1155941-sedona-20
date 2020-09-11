@@ -1,6 +1,187 @@
 .video {
   width: 320px;
   height: 201px;
-  background: url(/source/img/video-mobile@1x.jpg);
   margin: 0 auto;
+  margin-top: 7px;
+  position: relative;
+}
+.video__control {
+  margin: 0 auto;
+  width: 280px;
+  height: 111px;
+  position: absolute;
+  bottom: 290px;
+  left: 20px;
+}
+.video__slider {
+  height: 45px;
+  background-color: #000000;
+  opacity: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video__range {
+  width: 235px;
+  height: 3px;
+  outline: none;
+  background-color: #ffffff;
+}
+input[type=range].video__range {
+  margin: 4.5px 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+input[type=range].video__range:focus {
+  outline: none;
+}
+input[type=range].video__range::-webkit-slider-runnable-track {
+  background: rgba(255, 255, 255, 0.2);
+  height: 3px;
+  cursor: pointer;
+}
+input[type=range].video__range::-webkit-slider-thumb {
+  margin-top: -4.5px;
+  width: 9px;
+  height: 9px;
+  background: #ffffff;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+input[type=range].video__range:focus::-webkit-slider-runnable-track {
+  background: #ffffff;
+}
+input[type=range].video__range::-moz-range-track {
+  background: rgba(255, 255, 255, 0.2);
+  border: 0px solid rgba(1, 1, 1, 0);
+  border: 0;
+  border-radius: 4px;
+  height: 3px;
+  cursor: pointer;
+}
+input[type=range].video__range::-moz-range-thumb {
+  width: 9px;
+  height: 9px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 50px;
+  cursor: pointer;
+}
+input[type=range].video__range::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  border-width: 4.5px 0;
+  color: transparent;
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+}
+.input[type=range].video__range::-ms-fill-upper {
+  background: rgba(255, 255, 255, 0.2);
+  border: 0px solid rgba(1, 1, 1, 0);
+  border: 0;
+  border-radius: 8px;
+}
+input[type=range].video__range::-ms-thumb {
+  width: 9px;
+  height: 9px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 0px;
+}
+input[type=range].video__range:focus::-ms-fill-lower {
+  background: rgba(255, 255, 255, 0.2);
+}
+input[type=range].video__range:focus::-ms-fill-upper {
+  background: #ffffff;
+}
+.video__icons {
+  height: 66px;
+  background-color: $input-color;
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+}
+.video__icon {
+  fill: $icons-video-mobile-color;
+}
+.video__icon--replay {
+  margin-right: 134px;
+}
+.video__icon--subtitles {
+  margin-right: 30px;
+}
+.video__icon--replay:hover, .video__icon--subtitles:hover, .video__icon--fullscreen:hover {
+  fill: #333333;
+}
+.video__icon--replay:active, .video__icon--subtitles:active, .video__icon--fullscreen:active {
+  fill: #333333;
+  opacity: 0.3;
+}
+@media (min-width: $tablet) {
+  .video {
+    width: 648px;
+    height: 500px;
+    margin-top: 52px;
+    display: flex;
+    justify-content: center;
+  }
+  .video__control {
+    bottom: 138px;
+    left: 60px;
+  }
+  .video__slider {
+    width: 648px;
+    height: 93px;
+    justify-content: start;
+    padding-left: 90px;
+  }
+  .video__icons {
+    width: 648;
+    height: 93px;
+    position: absolute;
+    background-color: transparent;
+    bottom: 19px;
+  }
+  .video__icon {
+    display: block;
+    fill: #ffffff;
+  }
+  .video__icon--replay {
+    margin-right: 472px;
+    margin-left: 10px;
+  }
+  .video__range {
+    width: 389px;
+  }
+  .video__icon--replay:hover, .video__icon--subtitles:hover, .video__icon--fullscreen:hover {
+    fill: #ffffff;
+    opacity: 0.6;
+  }
+  .video__icon--replay:active, .video__icon--subtitles:active, .video__icon--fullscreen:active {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
+}
+@media (min-width: $desktop) {
+  .video {
+    width: 800px;
+  }
+  .video__control {
+    bottom: 190px;
+    left: 200px;
+  }
+  .video__slider {
+    width: 800px;
+  }
+  .video__range {
+    width: 540px;
+  }
+  .video__icon--replay {
+    margin-right: 624px;
+  }
 }

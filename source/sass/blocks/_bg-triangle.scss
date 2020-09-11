@@ -1,14 +1,20 @@
 .bg-triangle {
   display: flex;
-  margin-top: -44px;
+  margin-top: -40px;
   height: 57px;
 }
 .bg-triangle--reasons {
-  height: 37px;
+  height: 34px;
+  margin-top: -50px;
 }
 @media (min-width: $tablet) {
   .bg-triangle {
     width: 100%;
-    margin-top: -57px;
+    margin-top: -56px;
+  }
+}
+@media (min-width: $desktop) {
+  .bg-triangle {
+    margin-top: -56px;
   }
 }

@@ -1,24 +1,41 @@
 .form-name {
   min-height: 304px;
-  margin-top: 5px;
+  margin-top: 2px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 26px 0;
-
-  outline: 2px solid rgb(33, 142, 231);
-  outline-offset: -2px;
+  padding: 14px 0;
+  padding-bottom: 28px;
 }
 @media (min-width: $tablet) {
   .form-name {
     width: 50%;
-    min-height: 400px;
+    min-height: 379px;
+    padding-top: 49px;
+    padding-bottom: 45px;
+    margin: 0;
+  }
+  .form-name .form__title {
+    padding-right: 109px;
+    padding-bottom: 35px;
+  }
+  .form-name .form__input {
+    margin-left: 12px;
   }
 }
 @media (min-width: $desktop) {
   .form-name {
-    min-height: 300px;
+    min-height: 360px;
     margin: 0;
+    padding: 0px;
+    padding-bottom: 62px;
+  }
+  .form-name .form__title {
+    padding-right: 283px;
+    padding-bottom: 38px;
+  }
+  .form-name .form__label {
+    padding-right: 41px;
   }
 }

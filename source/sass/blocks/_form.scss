@@ -1,34 +1,216 @@
 .form {
   width: 100%;
   min-height: 1648px;
-
-  outline: 2px solid rgb(219, 17, 17);
-  outline-offset: -2px;
 }
-.form h3 {
-  margin: 0;
-}
-.form__impression {
-  min-height: 286px;
-  outline: 2px solid rgb(1, 105, 119);
-  outline-offset: -2px;
+.form__label-wrapper {
+  width: 100%;
+  min-height: 195px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  padding-left: 12px;
+}
+.form__impression .form__label-wrapper {
+  padding-bottom: 25px;
+}
+.form__attractions .form__label-wrapper {
+  min-height: 294px;
+}
+.form__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+.form__attractions .form__title {
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+.form__input {
+  height: 58px;
+  background-color: $input-color;
+  border: 0;
+  box-shadow: none;
+  appearance: none;
+  outline: none;
+  padding: 0;
+  padding-left: 33px;
+  margin-left: 10px;
+  &:hover {
+    background-color: $hr-color;
+  }
+  &:focus,
+  &:active {
+    background-color: white;
+    border: 4px solid $hr-color;
+    outline: none;
+  }
+}
+.form__label--text {
+  position: relative;
+  cursor: pointer;
+  padding-left: 55px;
+}
+.form__impression .form__label--text {
+  height: 26px;
+  display: flex;
+  padding-left: 86px;
+  padding-top: 12px;
+}
+.form__impression .form__input, .form__attractions .form__input {
+  position: absolute;
+  left: -9999px;
+}
+.form__label--text::before {
+  content: "";
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: $input-color;
+  display: block;
+  top: -3px;
+  left: 10px;
+}
+.form__label--text::after {
+  content: "";
+  position: absolute;
+  width: 18.2px;
+  height: 18.2px;
+  border-radius: 50%;
+  background-color: #333333;
+  opacity: 0;
+  top: 16px;
+  left: 28px;
+}
+.form__label--text:active::after {
+  background-color: rgba(51, 51, 51, 0.3);
+}
+.form__label--text:hover::before {
+  background-color: $hr-color;
+}
+.form__label--text:active::before {
+  background-color: $input-active-color;
+}
+.form__input:checked + .form__label--text::after {
+  opacity: 1;
+}
+.form__input:not(:checked) + .form__label-text::after {
+  background-image: none;
+}
+.form__label-text::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  border-radius: 5px;
+  background-color: $input-color;
+  display: block;
+  top: -4px;
+  left: 8px;
+}
+.form__label-text:hover::before {
+  background-color: $hr-color;
+}
+.form__label-text:active::before {
+  background-color: $input-active-color;
+}
+.form__label-text::after {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-image: url(/source/img/icon-tick.svg);
+  background-repeat: no-repeat;
+  top: 17px;
+  left: 8%;
+}
+.form__label-text:active::after {
+  background-image: url(/source/img/icon-tick-opacity.svg);
+}
+.form__input--name {
+  width: 230px;
+}
+.form__input--lastname {
+  width: 192px;
+}
+.form__input--father {
+  width: 194px;
+}
+.form__input::placeholder {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: black;
+}
+.form__label {
+  font-size: 14px;
+  line-height: 26px;
+  display: block;
+}
+.form__impression {
+  min-height: 291px;
   order: -1;
+}
+.form__impression .form__title  {
+  padding-top: 17px;
+  padding-bottom: 24px;
+  text-align: center;
+}
+.form__impression .form__label,
+.form__attractions .form__label {
+  text-transform: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 4px;
+  position: relative;
 }
 .form__attractions {
   min-height: 408px;
-  outline: 2px solid rgb(1, 105, 119);
-  outline-offset: -2px;
-  display: flex;
-  flex-direction: column;
+}
+.form__label-text {
+  display: inline-block;
+  padding-bottom: 20px;
+  margin-bottom: 14px;
+}
+.form__attractions .form__label-text {
+  padding-left: 86px;
+  padding-top: 12px;
+  padding-bottom: 0px;
 }
 .form__emotions {
-  min-height: 375px;
-  outline: 2px solid rgb(1, 105, 119);
-  outline-offset: -2px;
+  min-height: 374px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 17px;
+  padding-bottom: 48px;
+}
+.form__input--textarea-emotions {
+  width: 279px;
+  min-height: 160px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  resize: none;
+  margin-right: 4px;
+  padding-left: 22px;
+  margin-bottom: 34px;
+  padding-top: 12px;
+}
+.form__emotions .button {
+  margin-right: 2px;
+}
+@media (max-width: $tablet ) {
+  .form__footnote {
+    display: none;
+  }
 }
 @media (min-width: $tablet) {
   .form {
@@ -36,18 +218,96 @@
     display: flex;
     flex-wrap: wrap;
   }
-  .form__impression {
-    min-height: 400px;
-    width: 50%;
+  .form__title {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
   }
-  .form__emotions, .form__attractions {
-    width: 100%;
+  .form__input--name {
+    width: 216px;
+  }
+  .form__input--lastname {
+    width: 178px;
+  }
+  .form__input--father {
+    width: 180px;
+  }
+  .form__impression {
+    min-height: 375px;
+    width: 50%;
+    position: relative;
   }
   .form__attractions {
-    min-height: 320px;
+    width: 100%;
+    min-height: 347px;
+  }
+  .form__attractions .form__label {
+    align-items: baseline;
+    width: 200px;
+  }
+  .form__attractions .form__label-text {
+    padding-left: 80px;
+  }
+  .form__attractions .form__title {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 49px;
+    padding-bottom: 43px;
+  }
+  .form__attractions .form__label-wrapper {
+    min-height: 179px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 480px;
+    margin: 0 auto;
+    padding-right: 8px;
+    padding-top: 4px;
+  }
+  .form__label-text::before {
+    top: -4px;
+    left: 0px;
+  }
+  .form__impression .form__label-wrapper {
+    min-height: 189px;
+    padding-left: 50px;
+    padding-bottom: 0px;
+  }
+  .form__impression .form__title {
+    padding-top: 49px;
+    padding-bottom: 59px;
+    padding-left: 9px;
   }
   .form__emotions {
-    min-height: 415px;
+    width: 100%;
+    min-height: 400px;
+    padding-top: 0px;
+    padding-bottom: 60px;
+  }
+  .form__emotions .form__title {
+    padding-right: 3px;
+  }
+  .form__input--textarea-emotions {
+    width: 648px;
+    height: 160px;
+    margin: 0px;
+    padding-top: 16px;
+  }
+  .form__emotions .button {
+    width: 324px;
+  }
+  .form__wrapper {
+    width: 648px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .form__footnote {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    margin: 0;
+    padding-top: 21px;
   }
 }
 @media (min-width: $desktop) {
@@ -55,14 +315,60 @@
     min-height: 1209px;
   }
   .form__impression {
-    min-height: 300px;
+    min-height: 360px;
     width: 50%;
+  }
+  .form__impression .form__title {
+    padding-top: 0;
+    padding-left: 72px;
+    padding-bottom: 62px;
+  }
+  .form__impression .form__label-wrapper {
+    padding-left: 114px;
+    padding-bottom: 3px;
   }
   .form__attractions {
     min-height: 220px;
+    padding-top: 3px;
+  }
+  .form__attractions .form__title {
+    width: 30%;
+    padding-top: 11px;
+  }
+  .form__attractions .form__label-wrapper {
+    width: 100%;
+    min-height: 124px;
+    padding: 4px 123px;
+  }
+  .form__attractions .form__label:nth-child(2) {
+    margin-left: 18px;
+  }
+  .form__attractions .form__label:nth-child(3) {
+    margin-left: 12px;
   }
   .form__emotions {
-    min-height: 415px;
+    min-height: 395px;
     margin-bottom: 28px;
+    padding-bottom: 38px;
+  }
+  .form__input--textarea-emotions {
+    width: 960px;
+    padding-top: 27px;
+  }
+  .form__wrapper {
+    width: 100%;
+    padding: 0 120px;
+  }
+  .form__emotions .button {
+    width: 480px;
+  }
+  .form__input--name {
+    width: 350px;
+  }
+  .form__input--lastname {
+    width: 312px;
+  }
+  .form__input--father {
+    width: 314px;
   }
 }
