@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/source/css/style.css" rel="stylesheet">
+    <title>Form Sedona</title>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <nav class="navigation header__navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="/source/index.html">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="/source/photo.html">фото и видео</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link">форма отзыва</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="https://htmlacademy.ru/">html academy</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__middle">
+        <img class="logo header__logo" src="/source/img/logo-sedona-mobile.svg" alt="Логотип городка Седона">
+      </div>
+      <div class="header__image header__image--not-main">
+        <h1 class="visually-hidden">Седона</h1>
+      </div>
+    </header>
+    <main class="main">
+      <section class="intro intro--form-page">
+        <h2 class="intro__title intro__title--form-page">оставьте свой отзыв</h2>
+        <p class="intro__text intro__text--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </section>
+      <section class="form">
+        <h2 class="visually-hidden">форма отзыва</h2>
+        <div class="form-name">
+          <h3>Представьтесь:</h3>
+          <label>
+            Имя*: <input type="text">
+          </label>
+          <label>
+            Фамилия*: <input type="text">
+          </label>
+          <label>
+            Отчество: <input type="text">
+          </label>
+        </div>
+        <div class="form-contacts">
+          <h3></h3>
+          <label>
+            Контактный телефон*: <input type="text" placeholder="Введите телефон">
+            <span>2</span>
+          </label>
+          <label>
+            Электронная почта*: <input type="text" placeholder="Введите e-mail">
+            <span>2</span>
+          </label>
+        </div>
+        <div class="form__impression">
+          <h3>Ваше общее впечатление</h3>
+          <label>
+            <input type="radio" checked> Скорее положительное
+          </label>
+          <label>
+            <input type="radio"> Скорее отрицательное
+          </label>
+          <label>
+            <input type="radio"> Затрудняюсь ответить
+          </label>
+        </div>
+        <div class="form__attractions">
+          <h3>Посещенные достопримечательности</h3>
+          <label>
+            <input type="checkbox" checked> Мост Дьявола
+          </label>
+          <label>
+            <input type="checkbox" checked> Гора-Колокол
+          </label>
+          <label>
+            <input type="checkbox" checked> Слайд-парк
+          </label>
+          <label>
+            <input type="checkbox"> Красные скалы
+          </label>
+        </div>
+        <div class="form__emotions">
+          <h3>Опишите свои эмоции:</h3>
+          <textarea>Опишите подробно все свои восторги</textarea>
+          <button type="submit">Отправить отзыв</button>
+          <p>* — обязательные поля</p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__tag footer__tag--form-page">
+        #VISITSEDONA
+      </div>
+      <ul class="footer__social">
+        <li class="footer__icon">
+          <a href="#" class="footer__icon visually-hidden">twitter</a>
+        </li>
+        <li class="footer__icon">
+          <a href="#" class="footer__icon visually-hidden">fasebook</a>
+        </li>
+        <li class="footer__icon">
+          <a href="#" class="footer__icon visually-hidden">youtube</a>
+        </li>
+      </ul>
+      <address class="footer__autor">
+        <p class="footer__text">Разработано</p>
+        <a class="footer__img" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="logo html-academy">
+        </a>
+      </address>
+    </footer>
+  </body>
+</html>
