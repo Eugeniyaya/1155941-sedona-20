@@ -89,7 +89,9 @@ exports.html = html;
 
 // Build
 
-const build = gulp.series(clean, copy, styles, html);
+const build = gulp.series(
+  clean, copy, styles, html
+);
 
 exports.build = build;
 
