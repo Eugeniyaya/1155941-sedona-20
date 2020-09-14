@@ -1,13 +1,11 @@
 .blue-block {
-  //background-color: $blue-color;
+  background-color: $blue-color;
   width: 100%;
-  height: 190px;
+  height: 191px;
   color: white;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
-  outline: 2px solid rgb(185, 3, 209);
-  outline-offset: -2px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,9 +29,9 @@
   padding-top: 15px;
 }
 .blue-block--gray-block {
-  //background-color: $gray-color;
+  background-color: $gray-color;
   color: black;
-  height: 167px;
+  height: 166px;
 }
 .blue-block__text--gray-block {
   padding-top: 14px;

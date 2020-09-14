@@ -2,19 +2,97 @@
   min-height: 286px;
   display: flex;
   flex-direction: column;
-
-  outline: 2px solid rgb(60, 168, 87);
-  outline-offset: -2px;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 32px;
+}
+.form-contacts .form__title {
+  padding-top: 16px;
+  padding-right: 3px;
+}
+.form-contacts__label-text {
+  padding-left: 30px;
+  display: block;
+  padding-bottom: 6px;
+}
+.form-contacts .form__input {
+  width: 222px;
+  height: 58px;
+  background-color: $input-color;
+  position: relative;
+  &:hover {
+    background-color: $hr-color;
+  }
+  &:focus,
+  &:active {
+    background-color: white;
+    border: 4px solid $hr-color;
+    outline: none;
+  }
+}
+.form-contacts__icon-box {
+  width: 58px;
+  height: 58px;
+  background-color: #E6E6E6;
+  position: absolute;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 @media (min-width: $tablet) {
   .form-contacts {
     width: 100%;
-    min-height: 290px;
+    min-height: 245px;
+    padding-bottom: 7px;
+  }
+  .form-contacts .form__title {
+    padding-bottom: 7px;
+    padding-top: 24px;
+  }
+  .form-contacts .form__input {
+    width: 590px;
+    margin-left: 48px;
+  }
+  .form-contacts__label-text {
+    padding-left: 69px;
+    padding-bottom: 0px;
+  }
+  .form-contacts .form__label-wrapper {
+    min-height: 201px;
   }
 }
 @media (min-width: $desktop) {
   .form-contacts {
-    min-height: 252px;
+    min-height: 200px;
+    padding-bottom: 4px;
+  }
+  .form-contacts .form__title {
+    padding-top: 6px;
+    padding-right: 8px;
+  }
+  .form-contacts .form__input {
+    width: 258px;
+    position: relative;
+    margin-left: 18px;
+  }
+  .form-contacts .form__label-wrapper {
+    flex-direction: row;
+    min-height: 144px;
+    padding: 0 117px;
+    padding-top: 50px;
+  }
+  .form-contacts .form__label {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .form-contacts .form-contacts__label-text {
+    padding-left: 0px;
+    padding-top: 20px;
+  }
+  .form-contacts__icon-box {
+    position: relative;
+  }
+  .form-contacts__label-text--hidden {
+    display: none;
   }
 }
-

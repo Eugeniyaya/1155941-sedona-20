@@ -1,16 +1,17 @@
 .photogallery {
   list-style: none;
-  outline: 2px solid red;
-  outline-offset: -2px;
   margin: 0 auto;
   padding: 0;
 }
 @media (min-width: $tablet) {
   .photogallery {
-    width: 648px;
+    width: 649px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+  .photogallery .hr {
+    display: none;
   }
 }
 @media (min-width: $desktop) {

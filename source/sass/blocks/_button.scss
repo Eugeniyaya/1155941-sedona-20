@@ -1,0 +1,29 @@
+.button {
+  width: 280px;
+  height: 58px;
+  background-color: $blue-color;
+  color: white;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  &:hover {
+    background-color: #669EC0;
+  }
+  &:active {
+    background-color: #5496BD;
+  }
+}
+.button__text:active {
+  opacity: 0.3;
+}
+.button--disabled {
+  background-color: $hr-color;
+}

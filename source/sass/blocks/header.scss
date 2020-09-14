@@ -1,35 +1,42 @@
-.header__image {
-  width: 320px;
+.header__image--main {
+  max-width: 320px;
   height: 389px;
-  //background-image: url(/source/img/text-sedona-index.svg), url(/source/img/bg-back-mobile@1x.jpg);
-  background-size: 250px, auto;
+  background-image: url(/source/img/text-sedona-index.svg), url(/source/img/bg-back-mobile@1x.jpg);
+  background-size: 282px, cover;
+  background-position: center, center;
   background-repeat: no-repeat;
-  background-position: center;
   z-index: 2;
-
-  outline: 2px solid red;
-  outline-offset: -2px;
+  @media (min-resolution: 2dppx) {
+    background-image: url(/source/img/text-sedona-index.svg), url(/source/img/bg-back-mobile@2x.jpg);
+  }
 }
 .header__image--not-main {
   height: 158px;
-  //background-image: url(/source/img/text-sedona.svg) , url(/source/img/bg-back-tablet@1x.jpg);
+  background-image: url(/source/img/text-sedona.svg), url(/source/img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat, no-repeat;
   background-size: 229px, auto;
-  background-position: center, bottom;
+  background-position: center, center bottom;
+  @media (min-resolution: 2dppx) {
+    background-image: url(/source/img/text-sedona.svg), url(/source/img/bg-back-mobile@2x.jpg);
+    background-size: 229px, 800px auto;
+  }
 }
 .header__logo {
   min-width: 101.7px;
 }
 .header__middle {
   height: 56px;
-  //outline: 2px solid rgb(66, 61, 61);
-  //outline-offset: -2px;
+  display: flex;
+  justify-content: space-around;
 }
 @media (min-width: $tablet) {
-  .header__image {
-    width: 768px;
+  .header__image--main {
+    max-width: 768px;
     height: 518px;
-    background-size: 461px, 200%;
+    background-size: 460px, cover;
+    @media (min-resolution: 2dppx) {
+      background-image: url(/source/img/text-sedona-index.svg), url(/source/img/bg-back-tablet@2x.jpg);
+    }
   }
   .header__image--not-main {
     height: 292px;
@@ -43,11 +50,20 @@
   }
 }
 @media (min-width: $desktop) {
-  .header__image {
-    width: 1200px;
+  .header__image--main {
+    max-width: 1200px;
     height: 518px;
+    @media (min-resolution: 2dppx) {
+      background-image: url(/source/img/text-sedona-index.svg), url(/source/img/bg-back-desktop@2x.jpg);
+    }
   }
   .header__image--not-main {
-    height: 386px;
+    max-width: 1200px;
+    height: 325px;
+    background-size: 460px, cover;
+    background-position-y: 102px, -195px;
+    @media (min-resolution: 2dppx) {
+      background-image: url(/source/img/text-sedona.svg), url(/source/img/bg-back-desktop@2x.jpg);
+    }
   }
 }

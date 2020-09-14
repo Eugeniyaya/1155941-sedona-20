@@ -4,9 +4,8 @@
   height: 416px;
   display: flex;
   flex-direction: column;
-  outline: 2px solid rgb(236, 195, 12);
-  outline-offset: -2px;
-  padding-top: 5px;
+  padding-top: 7px;
+  position: relative;
 }
 .list-features__title {
   font-size: 18px;
@@ -29,10 +28,15 @@
 .list-features__feature--eat .list-features__text {
   width: 180px;
 }
+.list-features__icon {
+  fill: $blue-color;
+  position: absolute;
+  left: 20px;
+  box-sizing: initial;
+  padding-top: 9px;
+}
 @media (min-width: $tablet) {
   .list-features {
-    outline: 2px solid rgb(109, 238, 22);
-    outline-offset: -2px;
     display: flex;
     flex-direction: row;
     height: 332px;
@@ -42,7 +46,7 @@
   }
   .list-features__text {
     width: 192px;
-    padding-top: 9px;
+    padding-top: 10px;
   }
   .list-features__feature {
     padding: 0;
@@ -62,6 +66,16 @@
   }
   .list-features__feature--eat .list-features__text {
     width: 155px;
+  }
+  .list-features__icon {
+    position: relative;
+    width: 76px;
+    height: 76px;
+    padding-right: 40px;
+    padding-bottom: 3px;
+  }
+  .list-features__feature--souvenir .list-features__icon {
+    padding-bottom: 16px;
   }
 }
 @media (min-width: $desktop) {
@@ -83,5 +97,8 @@
   }
   .list-features__feature--eat .list-features__text {
     width: 290px;
+  }
+  .list-features__feature--souvenir .list-features__icon {
+    padding-bottom: 5px;
   }
 }

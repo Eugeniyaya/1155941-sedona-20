@@ -9,6 +9,8 @@
 @import "./blocks/intro.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/logo.scss";
+@import "./blocks/hr.scss";
+@import "./blocks/button.scss";
 
 /*Index*/
 @import "./blocks/blue-block.scss";
@@ -18,6 +20,7 @@
 @import "./blocks/interested.scss";
 @import "./blocks/block-img-wrapper.scss";
 @import "./blocks/decoration.scss";
+@import "./blocks/bg-triangle.scss";
 
 /*Photo*/
 @import "./blocks/photogallery.scss";
@@ -29,7 +32,4 @@
 @import "./blocks/form.scss";
 @import "./blocks/form-name.scss";
 @import "./blocks/form-contacts.scss";
-
-
-
-
+@import "./blocks/popup.scss";
