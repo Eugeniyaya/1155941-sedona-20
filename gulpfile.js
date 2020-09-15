@@ -33,7 +33,7 @@ exports.styles = styles;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -66,18 +66,18 @@ const copy = () => {
   ], {
   base: "source"
   })
- .pipe(gulp.dest("build"))
- };
+  .pipe(gulp.dest("build"))
+};
 
- exports.copy = copy;
+exports.copy = copy;
 
 //Clean
 
 const clean = () => {
   return del("build");
- };
+};
 
- exports.clean = clean;
+exports.clean = clean;
 
 // Html
 
@@ -90,5 +90,7 @@ exports.html = html;
 // Build
 
 const build = gulp.series(clean, copy, styles, html);
-
 exports.build = build;
+
+const start = gulp.series(build, server);
+exports.start = start;

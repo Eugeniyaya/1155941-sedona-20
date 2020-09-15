@@ -11,8 +11,8 @@
   padding-right: 3px;
 }
 .form-contacts__label-text {
-  padding-left: 30px;
-  display: block;
+  padding-left: 32px;
+  display: inline-block;
   padding-bottom: 6px;
 }
 .form-contacts .form__input {
@@ -53,11 +53,14 @@
     margin-left: 48px;
   }
   .form-contacts__label-text {
-    padding-left: 69px;
+    padding-left: 80px;
     padding-bottom: 0px;
   }
   .form-contacts .form__label-wrapper {
     min-height: 201px;
+  }
+  .form-contacts__label-text--hidden {
+    padding-left: 5px;
   }
 }
 @media (min-width: $desktop) {
