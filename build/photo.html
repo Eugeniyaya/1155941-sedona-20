@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../build/css/styles.min.css" rel="stylesheet">
+    <link href="/build/css/styles.min.css" rel="stylesheet">
     <title>Form Sedona</title>
   </head>
   <body class="page__body">
@@ -189,28 +189,30 @@
       <div class="hr hr--index"></div>
       <section class="final-argument">
         <div class="question">
-          <h2 class="question__title--argument">Все еще сомневаетесь?</h2>
+          <h2 class="question__title question__title--argument">Все еще сомневаетесь?</h2>
           <p class="question__text question__text--argument">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
-        <picture>
-          <source media="(min-width:1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
-          <source media="(min-width:768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-          <img class="video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@1x.jpg 1x, img/video-mobile@2x.jpg 2x" width="320" height="201" alt="видео Седоны">
-        </picture>
-        <div class="video__control">
-          <div class="video__slider">
-            <input class="video__range" type="range">
-          </div>
-          <div class="video__icons">
-            <svg class="video__icon video__icon--replay" width="16" height="20">
-              <use xlink:href="#icon-replay"></use>
-            </svg>
-            <svg class="video__icon video__icon--subtitles" width="32" height="20">
-              <use xlink:href="#icon-subtitles"></use>
-            </svg>
-            <svg class="video__icon video__icon--fullscreen" width="20" height="20">
-              <use xlink:href="#icon-fullscreen"></use>
-            </svg>
+        <div class="video">
+          <picture>
+            <source media="(min-width:1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width:768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="video__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@1x.jpg 1x, img/video-mobile@2x.jpg 2x" width="320" height="201" alt="видео Седоны">
+          </picture>
+          <div class="video__control">
+            <div class="video__slider">
+              <input class="video__range" type="range">
+            </div>
+            <div class="video__icons">
+              <svg class="video__icon video__icon--replay" width="16" height="20">
+                <use xlink:href="#icon-replay"></use>
+              </svg>
+              <svg class="video__icon video__icon--subtitles" width="32" height="20">
+                <use xlink:href="#icon-subtitles"></use>
+              </svg>
+              <svg class="video__icon video__icon--fullscreen" width="20" height="20">
+                <use xlink:href="#icon-fullscreen"></use>
+              </svg>
+            </div>
           </div>
         </div>
       </section>

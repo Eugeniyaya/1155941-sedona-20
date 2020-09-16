@@ -35,7 +35,7 @@
   appearance: none;
   outline: none;
   padding: 0;
-  padding-left: 33px;
+  padding-left: 26px;
   margin-left: 10px;
   &:hover {
     background-color: $hr-color;
@@ -48,7 +48,7 @@
   }
 }
 .form__input[type="text"]::-moz-placeholder {
-  line-height: 50px;
+  line-height: 58px;
 }
 .form__input--checkbox:focus, .form__input--radio:focus {
   outline: 1px solid #808080;
@@ -96,7 +96,7 @@
 .form__label--text:hover::before {
   background-color: $hr-color;
 }
-.form__label--text:active::before {
+.form__label--text:active::before, .form__label--text:focus::before {
   background-color: $input-active-color;
 }
 .form__input:checked + .form__label--text::after {

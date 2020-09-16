@@ -6,12 +6,18 @@
   align-items: center;
   text-align: center;
 }
+.interested__google {
+  border: none;
+  outline: none;
+  width: 100%;
+}
 .interested__map {
   width: 320px;
   height: 350px;
   background-image: url(./../img/bg-map-mobile@1x.jpg);
   background-repeat: no-repeat;
   margin-top: 50px;
+  position: relative;
   @media
   (min-resolution: 144dpi),
   (min-resolution: 1.5dppx) {
@@ -44,6 +50,9 @@
     height: 58px;
     padding-top: 2px;
   }
+  .interested__google {
+    width: 768px;
+  }
 }
 @media (min-width: $desktop) {
   .interested {
@@ -61,5 +70,8 @@
       background-size: cover;
       background-position: center;
     }
+  }
+  .interested__google {
+    width: 1200px;
   }
 }
