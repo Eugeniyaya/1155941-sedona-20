@@ -16,6 +16,7 @@
   height: 350px;
   background-image: url(./../img/bg-map-mobile@1x.jpg);
   background-repeat: no-repeat;
+  background-color: #cce0a3;
   margin-top: 50px;
   position: relative;
   @media
@@ -37,6 +38,7 @@
     width: 768px;
     background-image: url(./../img/bg-map-tablet@1x.jpg);
     background-repeat: no-repeat;
+    background-color: #cce0a3;
     @media
     (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
@@ -50,9 +52,6 @@
     height: 58px;
     padding-top: 2px;
   }
-  .interested__google {
-    width: 768px;
-  }
 }
 @media (min-width: $desktop) {
   .interested {
@@ -63,6 +62,7 @@
     width: 1200px;
     background-image: url(./../img/bg-map-desktop@1x.jpg);
     background-repeat: no-repeat;
+    background-color: #cce0a3;
     @media
     (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
@@ -70,8 +70,5 @@
       background-size: cover;
       background-position: center;
     }
-  }
-  .interested__google {
-    width: 1200px;
   }
 }
