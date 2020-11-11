@@ -10,6 +10,11 @@
   justify-content: space-between;
   padding-left: 12px;
 }
+.form__forms {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 .form__impression .form__label-wrapper {
   padding-bottom: 25px;
 }

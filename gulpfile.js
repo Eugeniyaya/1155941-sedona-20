@@ -8,6 +8,11 @@ const sync = require("browser-sync").create();
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const del=require("del");
+const imagemin=require("gulp-imagemin");
+const webp=require("gulp-webp");
+const svgstore = require("gulp-svgstore");
+
+
 
 // Styles
 
@@ -94,3 +99,41 @@ exports.build = build;
 
 const start = gulp.series(build, server);
 exports.start = start;
+
+// Images opimization
+
+const images = () => {
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
+  .pipe(imagemin([
+    imagemin.gifsicle({interlaced: true}),
+    imagemin.mozjpeg({quality: 75, progressive: true}),
+    imagemin.optipng({optimizationLevel: 5}),
+    imagemin.svgo({
+        plugins: [
+            {removeViewBox: true},
+            {cleanupIDs: false}
+        ]
+    })
+]))
+}
+ exports.images = images;
+
+// Images WebP
+
+const createWebp = () => {
+  return gulp.src("source/img/**/*.{png,jpg}")
+  .pipe(webp({quality: 90}))
+  .pipe(gulp.dest("source/img"))
+ }
+ exports.webp = createWebp;
+
+ //  Sprites icon-  svg
+
+const sprite = () => {
+  return gulp.src("source/img/**/icon-*.svg")
+ .pipe(svgstore())
+ .pipe(rename("sprite.svg"))
+ .pipe(gulp.dest("source/img"))
+}
+exports.sprite = sprite;
+

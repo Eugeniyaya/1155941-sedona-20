@@ -86,92 +86,94 @@
       <section class="form">
         <h2 class="visually-hidden">форма отзыва</h2>
         <hr class="hr">
-        <div class="form-name">
-          <h3 class="form__title">Представьтесь:</h3>
-          <label class="form__label form__label--name">
-            Имя*: <input class="form__input form__input--name" type="text" placeholder="Петр">
-          </label>
-          <label class="form__label form__label--lastname">
-            Фамилия*: <input class="form__input form__input--lastname" type="text" placeholder="Иванов">
-          </label>
-          <label class="form__label form__label--father">
-            Отчество: <input class="form__input form__input--father" type="text" placeholder="Александрович">
-          </label>
-        </div>
-        <hr class="hr">
-        <div class="form-contacts">
-          <h3 class="form__title">Контактная информация</h3>
-          <div class="form__label-wrapper">
-            <label class="form__label">
-              <span class="form-contacts__label-text"><span class="form-contacts__label-text form-contacts__label-text--hidden">Контактный</span> телефон*: </span>
-              <input class="form__input" type="text" placeholder="Введите телефон">
-              <span class="form-contacts__icon-box">
-                <svg width="18" height="18">
-                  <use xlink:href="#icon-phone"></use>
-                </svg>
-              </span>
+        <form class="form__forms" action="#" method="POST">
+          <div class="form-name">
+            <h3 class="form__title">Представьтесь:</h3>
+            <label class="form__label form__label--name">
+              Имя*: <input class="form__input form__input--name" type="text" placeholder="Петр">
             </label>
-            <label class="form__label">
-              <span class="form-contacts__label-text">Электронная почта*: </span><input class="form__input" type="text" placeholder="Введите e-mail">
-              <span class="form-contacts__icon-box">
-                <svg width="16" height="16">
-                  <use xlink:href="#icon-mail"></use>
-                </svg>
-              </span>
+            <label class="form__label form__label--lastname">
+              Фамилия*: <input class="form__input form__input--lastname" type="text" placeholder="Иванов">
+            </label>
+            <label class="form__label form__label--father">
+              Отчество: <input class="form__input form__input--father" type="text" placeholder="Александрович">
             </label>
           </div>
-        </div>
-        <hr class="hr">
-        <div class="form__impression">
-          <h3 class="form__title">Ваше общее впечатление:</h3>
-          <div class="form__label-wrapper">
-            <label class="form__label">
-              <input class="form__input form__input--radio" type="radio" checked>
-              <span class="form__label form__label--text">Скорее положительное</span>
-            </label>
-            <label class="form__label">
-              <input class="form__input form__input--radio" type="radio">
-              <span class="form__label form__label--text">Скорее отрицательное</span>
-            </label>
-            <label class="form__label">
-              <input class="form__input form__input--radio" type="radio">
-              <span class="form__label form__label--text">Затрудняюсь ответить</span>
-            </label>
+          <hr class="hr">
+          <div class="form-contacts">
+            <h3 class="form__title">Контактная информация</h3>
+            <div class="form__label-wrapper">
+              <label class="form__label">
+                <span class="form-contacts__label-text"><span class="form-contacts__label-text form-contacts__label-text--hidden">Контактный</span> телефон*: </span>
+                <input class="form__input" type="text" placeholder="Введите телефон">
+                <span class="form-contacts__icon-box">
+                  <svg width="18" height="18">
+                    <use xlink:href="#icon-phone"></use>
+                  </svg>
+                </span>
+              </label>
+              <label class="form__label">
+                <span class="form-contacts__label-text">Электронная почта*: </span><input class="form__input" type="text" placeholder="Введите e-mail">
+                <span class="form-contacts__icon-box">
+                  <svg width="16" height="16">
+                    <use xlink:href="#icon-mail"></use>
+                  </svg>
+                </span>
+              </label>
+            </div>
           </div>
-        </div>
-        <hr class="hr">
-        <div class="form__attractions">
-          <h3 class="form__title">Посещенные достопримечательности</h3>
-          <div class="form__label-wrapper">
-            <label class="form__label">
-              <input class="form__input form__input--checkbox" type="checkbox" checked>
-              <span class="form__label-text">Мост Дьявола</span>
-            </label>
-            <label class="form__label">
-              <input class="form__input form__input--checkbox" type="checkbox" checked>
-              <span class="form__label-text">Гора-Колокол</span>
-            </label>
-            <label class="form__label">
-              <input class="form__input form__input--checkbox" type="checkbox" checked>
-              <span class="form__label-text">Слайд-парк</span>
-            </label>
-            <label class="form__label">
-              <input class="form__input form__input--checkbox" type="checkbox">
-              <span class="form__label-text">Красные скалы</span>
-            </label>
+          <hr class="hr">
+          <div class="form__impression">
+            <h3 class="form__title">Ваше общее впечатление:</h3>
+            <div class="form__label-wrapper">
+              <label class="form__label">
+                <input class="form__input form__input--radio" type="radio" checked>
+                <span class="form__label form__label--text">Скорее положительное</span>
+              </label>
+              <label class="form__label">
+                <input class="form__input form__input--radio" type="radio">
+                <span class="form__label form__label--text">Скорее отрицательное</span>
+              </label>
+              <label class="form__label">
+                <input class="form__input form__input--radio" type="radio">
+                <span class="form__label form__label--text">Затрудняюсь ответить</span>
+              </label>
+            </div>
           </div>
-        </div>
-        <hr class="hr">
-        <div class="form__emotions">
-          <h3 class="form__title">Опишите свои эмоции:</h3>
-          <textarea class="form__input form__input--textarea-emotions">Опишите подробно все свои восторги</textarea>
-          <div class="form__wrapper">
-            <button class="button" type="submit">
-              <span class="button__text">Отправить отзыв</span>
-            </button>
-            <p class="form__footnote">* — обязательные поля</p>
+          <hr class="hr">
+          <div class="form__attractions">
+            <h3 class="form__title">Посещенные достопримечательности</h3>
+            <div class="form__label-wrapper">
+              <label class="form__label">
+                <input class="form__input form__input--checkbox" type="checkbox" checked>
+                <span class="form__label-text">Мост Дьявола</span>
+              </label>
+              <label class="form__label">
+                <input class="form__input form__input--checkbox" type="checkbox" checked>
+                <span class="form__label-text">Гора-Колокол</span>
+              </label>
+              <label class="form__label">
+                <input class="form__input form__input--checkbox" type="checkbox" checked>
+                <span class="form__label-text">Слайд-парк</span>
+              </label>
+              <label class="form__label">
+                <input class="form__input form__input--checkbox" type="checkbox">
+                <span class="form__label-text">Красные скалы</span>
+              </label>
+            </div>
           </div>
-        </div>
+          <hr class="hr">
+          <div class="form__emotions">
+            <h3 class="form__title">Опишите свои эмоции:</h3>
+            <textarea class="form__input form__input--textarea-emotions">Опишите подробно все свои восторги</textarea>
+            <div class="form__wrapper">
+              <button class="button" type="submit">
+                <span class="button__text">Отправить отзыв</span>
+              </button>
+              <p class="form__footnote">* — обязательные поля</p>
+            </div>
+          </div>
+        </form>
       </section>
     </main>
     <footer class="footer">
