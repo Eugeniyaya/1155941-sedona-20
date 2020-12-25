@@ -132,13 +132,13 @@
   position: absolute;
   width: 23px;
   height: 23px;
-  background-image: url(/source/img/icon-tick.svg);
+  background-image: url(source/img/icon-tick.svg);
   background-repeat: no-repeat;
   top: 17px;
   left: 8%;
 }
 .form__label-text:active::after {
-  background-image: url(/source/img/icon-tick-opacity.svg);
+  background-image: url(source/img/icon-tick-opacity.svg);
 }
 .form__input--name {
   width: 230px;
